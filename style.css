@@ -694,6 +694,13 @@ font-size: 16px;
 
 }
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
+
+.navbar-nav a:link		{ color:#f84b4a;}
+.navbar-nav a:activate	{ color:#f84b4a;}
+.navbar-nav a:visited	{ color:#f84b4a;}
+.navbar-nav a:hover		{ color:#f84b4a;}
+.navbar-nav a:focus		{ color:#f84b4a;}
+
 #langflag {
 	background:url(img/langflag.png) no-repeat center center;
 	width:500px;
