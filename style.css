@@ -188,7 +188,8 @@ hr {
 	padding: 80px 0px;
 }
 
-.sec-head h2 {
+.sec-head h2,
+#contact-heading {
 	font-size: 30px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -199,8 +200,13 @@ hr {
 	font-size: 25px;
 }
 
-.sec-head h2 span {
+.sec-head h2 span,
+#contact-heading span {
 	font-weight: 600;
+}
+
+#contact-heading {
+
 }
 
 .feature .fea-head .fea-one {
@@ -548,7 +554,6 @@ hr {
 .getsocial {
 	width: 100%;
 	float: left;
-	padding: 80px 0px;
 }
 
 .getsocial .header-social li {
@@ -723,4 +728,46 @@ hr {
 	background:url(img/langflag.png) no-repeat center center;
 	width:500px;
 	height:36px;
+}
+
+/* Style the text boxes */
+input {
+	width:290px;
+	height:27px;
+	background:#fff; /*efefef*/
+	border:1px solid #dedede;
+	padding:10px;
+	margin-top:3px;
+	font-size:0.9em;
+	color:#000; /*3a3a3a*/
+}
+
+textarea {
+	width:290px;
+	height:100px;
+	background:#fff; /*efefef*/
+	border:1px solid #dedede;
+	padding:10px;
+	margin-top:3px;
+	font-size:0.9em;
+	color:#000; /*3a3a3a*/
+}
+
+input:focus,
+textarea:focus {
+  border:1px solid #6b6a76;
+}
+
+.submit {
+  width:290px;
+  height:38px;
+  background-color:#6c6a75;
+  color: #fff;
+  border:none;
+  margin-top:20px;
+  cursor:pointer;
+}
+
+.submit:hover {
+  border:1px solid #fff;
 }
