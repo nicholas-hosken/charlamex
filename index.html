@@ -8,9 +8,9 @@
 		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700|Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 		<link href="css/font-awesome.min.css" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
-	  <script src="jquery.quovolver.min.js"></script>
+	  <script src="js/jquery.quovolver.min.js"></script>
 		<!--[if lt IE 9]-->
 		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -176,18 +176,18 @@
 									<div class="hidden-sm">
 										<p class="marme">Originally from the city of Tlaxcala, in the heart of Mexico, Marisol first attended the Universidad
 											Autónoma de Tlaxcala (Autonomous University of Tlaxcala) with the aim of obtaining a BA in Modern Languages. Her
-											ambition, high grades and advanced language skills quickly gained the attention of multi-billionaire Carlos Slim who
+											ambition, high grades and advanced language skills quickly gained the attention of business tycoon Carlos Slim who
 											offered her a bursary and paid, in full, for all her studies and materials on the course (presumably with money found
-											fallen down the side of his couch). Upon obtaining her degree, she was immediately hired by The Thomas More College
+										  down the side of his couch). Upon obtaining her degree, she was immediately hired by The Thomas More College
 											in London, UK where she became responsible for teaching students from as young as 8 in succeeding to develop a
 											conversational level of Spanish.
 										</p>
-										<p class="marme">While living in London she continued her studies first at "The Burlington School of English" and
-											later at "The London Metropolitan University" where she obtained a Masters in Applied Translation. She later
+										<p class="marme">While in London she continued her studies first at "The Burlington School of English" and
+											then at "The London Metropolitan University" where she obtained a Masters in Applied Translation. She later
 											also enrolled with St George International, where she also completed a TESOL (Teaching English to Speakers of Other
 											Languages) degree.
 										</p>
-										<p class="marme">To subsidise her studying, she started offering private Spanish, English and French lessons in the
+										<p class="marme">To subsidise her studies, she started offering private Spanish, English and French lessons in the
 											evenings which turned out to be so popular that she eventually started teaching privately full time. London, being the
 											melting pot that it is, allowed her teach students of all levels and from various countries including: Belarus, Bolivia,
 											Brazil, Colombia, France, Germany, Hungary, Italy, Japan, Poland, South Africa and the UK.
@@ -203,18 +203,18 @@
 									<div class="visible-sm col-sm-5">
 										<p class="marme">Originally from the city of Tlaxcala, in the heart of Mexico, Marisol first attended the Universidad
 											Autónoma de Tlaxcala (Autonomous University of Tlaxcala) with the aim of obtaining a BA in Modern Languages. Her
-											ambition, high grades and advanced language skills quickly gained the attention of multi-billionaire Carlos Slim who
+											ambition, high grades and advanced language skills quickly gained the attention of business tycoon Carlos Slim who
 											offered her a bursary and paid, in full, for all her studies and materials on the course (presumably with money found
-											fallen down the side of his couch). Upon obtaining her degree, she was immediately hired by The Thomas More College
+										  down the side of his couch). Upon obtaining her degree, she was immediately hired by The Thomas More College
 											in London, UK where she became responsible for teaching students from as young as 8 in succeeding to develop a
 											conversational level of Spanish.
 										</p>
-										<p class="marme">While living in London she continued her studies first at "The Burlington School of English" and
-											later at "The London Metropolitan University" where she obtained a Masters in Applied Translation. She later
+										<p class="marme">While in London she continued her studies first at "The Burlington School of English" and
+											then at "The London Metropolitan University" where she obtained a Masters in Applied Translation. She later
 											also enrolled with St George International, where she also completed a TESOL (Teaching English to Speakers of Other
 											Languages) degree.
 										</p>
-										<p class="marme">To subsidise her studying, she started offering private Spanish, English and French lessons in the
+										<p class="marme">To subsidise her studies, she started offering private Spanish, English and French lessons in the
 											evenings which turned out to be so popular that she eventually started teaching privately full time. London, being the
 											melting pot that it is, allowed her teach students of all levels and from various countries including: Belarus, Bolivia,
 											Brazil, Colombia, France, Germany, Hungary, Italy, Japan, Poland, South Africa and the UK.
@@ -379,6 +379,7 @@
 		</section>
 
 		<!--contact section-->
+		<!--contact section-->
 		<section class="contact" id="contact" style="background-color:#2C2F3C; margin-bottom:0px; padding-top:30px; padding-bottom:30px">
 			<div class="container">
 				<div class="contact-info">
@@ -510,46 +511,6 @@
 					// Instantiate MixItUp:
 					$('#Container').mixItUp();
 				});
-    	</script>
-
-    	<script>
-		    jQuery(function ($) {
-			    // fancybox
-			    $(".fancybox").fancybox({
-		        modal: true, // disable regular nav and close buttons
-		        // add buttons helper (requires buttons helper js and css files)
-		        helpers: {
-	          buttons: {}
-	        }
-		    });
-			    // filter selector
-			    $(".filter").on("click", function () {
-		        var $this = $(this);
-		        // if we click the active tab, do nothing
-		        if ( !$this.hasClass("active") ) {
-		            $(".filter").removeClass("active");
-		            $this.addClass("active"); // set the active tab
-		            // get the data-rel value from selected tab and set as filter
-		            var $filter = $this.data("rel");
-		            // if we select view all, return to initial settings and show all
-		            $filter == 'all' ?
-		                $(".fancybox")
-		                .attr("data-fancybox-group", "portfolio")
-		                .not(":visible")
-		                .fadeIn()
-		            : // otherwise
-		                $(".fancybox")
-		                .fadeOut(0)
-		                .filter(function () {
-		                    // set data-filter value as the data-rel value of selected tab
-		                    return $(this).data("filter") == $filter;
-		                })
-		                // set data-fancybox-group and show filtered elements
-		                .attr("data-fancybox-group", $filter)
-		                .fadeIn(1000);
-		        } // if
-		    	}); // on
-				}); // ready
     	</script>
 
     	<!--texitimonial-->
